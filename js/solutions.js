@@ -26,5 +26,17 @@ console.log(reverseWord("Borscht"));
 
 
 
+let sum = 0;
+const sumDigits = (num1) => {
+	let total = num1.toString().split('');
+	console.log(total);
+	for (i = 0; i < total.length; i++) {
 
-// write function to check if reverseVariable matches original string
+		sum += parseInt(total[i]);
+
+	}
+}
+
+sumDigits(22222);
+		console.log(sum);
+
