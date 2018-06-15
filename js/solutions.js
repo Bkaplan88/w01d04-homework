@@ -63,9 +63,28 @@ const sumArray = (arr) => {
 sumArray([1, 2, 3, 4, 5, 6]);
 console.log (sum1);
 
+// still working on this
+const checkPrime = (input) => {
+	for (i = 0; i < input; i++) {
+		if (input % i === 0) {
+			return false;
+
+		} else {
+			return true;
+		}
+
+	}
+}
 
 
+const printPrime = (input) => {
+	for (let i = 0; i < input.length; i++) {
+		console.log(checkPrime(i), i)	
+	}
 
+}
+
+printPrime(97);
 
 
 
