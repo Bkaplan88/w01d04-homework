@@ -65,21 +65,22 @@ console.log (sum1);
 
 // still working on this
 const checkPrime = (input) => {
-	for (i = 0; i < input; i++) {
+	for (i = 2; i < input; i++) {
 		if (input % i === 0) {
 			return false;
 
-		} else {
-			return true;
-		}
+		} 
 
 	}
+	return true;
 }
 
 
 const printPrime = (input) => {
-	for (let i = 0; i < input.length; i++) {
-		console.log(checkPrime(i), i)	
+	for (let i = 0; i < input; i++) {
+		if (checkPrime(i)) {
+			console.log(i);
+		}
 	}
 
 }
@@ -87,6 +88,37 @@ const printPrime = (input) => {
 printPrime(97);
 
 
+
+// reverse array
+
+let testArr = ["a", "b", "c", "d", "e"];
+
+const reverseArr = (arr) => {
+	for (let i = 0; i < arr.length / 2; i++) {
+	const tempVarr = arr[i]
+	arr[i] = arr[arr.length - 1 - i];
+	arr[arr.legnth - 1 - i] = tempVarr;
+}
+
+}
+
+
+
+const insertDash = (num) => {
+	let dash = "";
+	num = num.toString();
+	for (let i = 0; i < num.length; i++) {
+		dash += num[i];
+		if (num[i] % 2 === 1 && num[i + 1] % 2 === 1) {
+			dash +=  "-";
+			
+			} 
+	}
+	return dash;	
+
+}
+
+console.log(insertDash(454793));
 
 
 
