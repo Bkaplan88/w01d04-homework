@@ -37,6 +37,20 @@ const sumDigits = (num1) => {
 	}
 }
 
-sumDigits(22222);
+sumDigits(42);
 		console.log(sum);
+
+// create function with two parameters
+
+
+
+const calculateSide = (sideA, sideB) => {
+	return Math.sqrt(sideA * sideA + sideB * sideB);
+			
+}
+
+console.log(calculateSide(8, 6));
+
+
+
 
